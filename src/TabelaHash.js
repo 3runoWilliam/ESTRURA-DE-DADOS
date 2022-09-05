@@ -31,7 +31,6 @@ class TabelaHash {
 		console.log("soma = " + soma);
 		return soma % 20;
 	}
-
 	add(chave, dado) {
 		let novo = new Registro(chave, dado);
 		let indiceHash = this.funcaoHash(chave);
@@ -46,21 +45,17 @@ class TabelaHash {
 				//se encontrar a mesma chave faz a substituicao
 				break;
 			}
-
 			//proximo registro
 			indiceHash++;
 			//volta para o inicio da tabela
 			indiceHash %= size;
 		}
-
 		this.tabela[indiceHash] = novo;
 		console.log(this.tabela);
 	}
-
 	remove(chave) {
 		//obtem o valor de hash
 		let indiceHash = this.funcaoHash(chave);
-
 		//move ateh encontrar um registro nao inicializado (undefined) ou vazio (null)
 		while (
 			this.tabela[indiceHash] != null ||
@@ -80,10 +75,8 @@ class TabelaHash {
 		console.log(this.tabela);
 		return false;
 	}
-
 	get(chave) {
 		let indiceHash = this.funcaoHash(chave);
-
 		while (
 			this.tabela[indiceHash] ||
 			this.tabela[indiceHash] != undefined
@@ -96,7 +89,6 @@ class TabelaHash {
 			//volta para o inicio da tabela
 			indiceHash %= size;
 		}
-
 		return undefined;
 	}
 }
