@@ -19,13 +19,11 @@ class Pilha {
             throw new Error("stack underflow")
         }
     }
-
     top() {
         if (!this.isEmpty()) {
             return this.dados[this.topo-1]
         }
     }
-
     isFull() {
         return this.length() === this.maxSize
     }
