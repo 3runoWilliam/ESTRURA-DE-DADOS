@@ -4,7 +4,6 @@ class Pilha {
         this.dados = []
         this.maxSize = size
     }
-
     push(dado) {
         if (!this.isFull()) {
             this.dados[this.topo] = dado
@@ -13,7 +12,6 @@ class Pilha {
             throw new Error("stack overflow")
         }
     }
-
     pop() {
         if (!this.isEmpty()) {
             this.topo--
