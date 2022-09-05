@@ -92,11 +92,8 @@ class TabelaHash {
 		return undefined;
 	}
 }
-
 //export default TabelaHash;
-
 let f = new TabelaHash();
-
 f.add("nome", { nome: "taniro", idade: 35 });
 f.add("sobrenome", "chacon");
 console.log(f.get("sobrenome"));
