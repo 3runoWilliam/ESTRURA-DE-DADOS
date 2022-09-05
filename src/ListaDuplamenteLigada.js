@@ -86,7 +86,6 @@ class ListaDuplamenteLigada {
 			let next = this.head.proximo;
 			let last = this.tail;
 			let aux;
-
 			if (current.dado === dado) {
 				return this.removeFirst();
 			} else if (last.dado === dado) {
@@ -105,10 +104,8 @@ class ListaDuplamenteLigada {
 				}
 			}
 		}
-
 		return false;
 	}
-
 	/**
 	 * Remove o Nó que está no final da Lista
 	 *
@@ -124,7 +121,6 @@ class ListaDuplamenteLigada {
 			}
 		}
 	}
-
 	/**
 	 * Verifica se a Lista está fazia ou não
 	 * @returns {boolean} - Retorna [true] se a fila estiver vazia e [false] caso ela não esteja
@@ -132,7 +128,6 @@ class ListaDuplamenteLigada {
 	isEmpty() {
 		return this.head === null;
 	}
-
 	/**
 	 * Formatação da Lista em String
 	 * @returns {string} - Lista retornada em formato de string
@@ -148,7 +143,6 @@ class ListaDuplamenteLigada {
 
 		return texto;
 	}
-
 	/**
 	 * Retorna o tamanho da Lista
 	 * @returns {number} - Tamanho da Lista
@@ -163,7 +157,6 @@ class ListaDuplamenteLigada {
 		}
 		return cont;
 	}
-    
 	/**
 	 * Insere um Novo Nó em um local específico da Lista
 	 * @param {number} [posicao] - O índicie que o novo nó será inserido
