@@ -1,7 +1,6 @@
 /**
  * Implementação de uma Lista Duplamente Ligada
  */
-
  class Node {
 	/**
 	 * Construtor do Nó que será usado para implementar uma Lista Duplamente Ligada
@@ -14,7 +13,6 @@
 		this.proximo = null;
 	}
 }
-
 class ListaDuplamenteLigada {
 	/**
 	 * Construtor de uma Lista Duplamente Ligada
