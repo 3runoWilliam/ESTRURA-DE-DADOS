@@ -13,7 +13,6 @@ class TabelaHashListaLigada {
 	}
 	add(chave, dado) {
 		let indiceHash = this.funcaoHash(chave);
-
 		//se a lista não está criada, crie a lista
 		if (
 			this.tabela[indiceHash] === null ||
@@ -42,14 +41,11 @@ class TabelaHashListaLigada {
 		) {
 			return false;
 		}
-
 		//remova da lista se encontrar
 		return this.tabela[indiceHash].remove(chave);
 	}
-
 	get(chave) {
 		let indiceHash = this.funcaoHash(chave);
-
 		//se a lista não está criada, retorne indefinido
 		if (
 			this.tabela[indiceHash] === null ||
@@ -57,7 +53,6 @@ class TabelaHashListaLigada {
 		) {
 			return undefined;
 		}
-
 		//senao, faça uma busca na lista e retorne o valor encontrado
 		return this.tabela[indiceHash].search(chave);
 	}
