@@ -33,10 +33,7 @@ class Pilha {
     length() {
         return this.topo;
     }
-
     toString() {
-
     }
 }
-
 export default Pilha;
