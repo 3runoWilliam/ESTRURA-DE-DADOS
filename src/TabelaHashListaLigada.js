@@ -4,7 +4,6 @@ class TabelaHashListaLigada {
 	constructor() {
 		this.tabela = [];
 	}
-
 	funcaoHash(palavra) {
 		let soma = 0;
 		for (let x = 0; x < palavra.length; x++) {
@@ -12,7 +11,6 @@ class TabelaHashListaLigada {
 		}
 		return soma % 17;
 	}
-
 	add(chave, dado) {
 		let indiceHash = this.funcaoHash(chave);
 
