@@ -22,7 +22,6 @@ class ListaDuplamenteLigada {
 		this.head = null;
 		this.tail = null;
 	}
-
 	/**
 	 * Insere um Novo Nó no inicio da Lista
 	 * @param {any} [dado] - Novo nó que está sendo inserindo na Lista
@@ -42,7 +41,6 @@ class ListaDuplamenteLigada {
 			this.head = novo_no;
 		}
 	}
-
 	/**
 	 * Insere um Novo Nó no final da Lista
 	 * @param {any} [dado] - Novo nó que está sendo inserindo no final da Lista
@@ -62,7 +60,6 @@ class ListaDuplamenteLigada {
 			this.tail = novo_no;
 		}
 	}
-
 	/**
 	 * Remove o Nó que se encontra no começo da Lista.
 	 *
@@ -78,7 +75,6 @@ class ListaDuplamenteLigada {
 			}
 		}
 	}
-
 	/**
 	 * Remove um Nó específico da Lista
 	 * @param {any} [dado] - Nó que será removido
