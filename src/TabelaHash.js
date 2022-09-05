@@ -4,7 +4,6 @@ class Registro {
 		this.dado = dado;
 	}
 }
-
 /*
 2*2 = 4 % 10 = 4
 7*2 = 14 % 10 = 4
@@ -19,13 +18,11 @@ funcaoHash(key){
 	return (key * 2)%10
 }
 */
-
 class TabelaHash {
 	constructor() {
 		this.tabela = [];
 		this.size = 20;
 	}
-
 	funcaoHash(palavra) {
 		let soma = 0;
 		for (let x = 0; x < palavra.length; x++) {
