@@ -57,5 +57,4 @@ class TabelaHashListaLigada {
 		return this.tabela[indiceHash].search(chave);
 	}
 }
-
 export default TabelaHashListaLigada;
