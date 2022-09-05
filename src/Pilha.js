@@ -27,11 +27,9 @@ class Pilha {
     isFull() {
         return this.length() === this.maxSize
     }
-
     isEmpty() {
         return this.length() === 0
     }
-
     length() {
         return this.topo;
     }
