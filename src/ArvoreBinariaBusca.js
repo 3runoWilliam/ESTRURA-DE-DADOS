@@ -107,7 +107,6 @@ class ArvoreBinariaBusca {
 	inOrder() {
 		this.inOrderNode(this.root);
 	}
-
 	inOrderNode(node) {
 		if (node !== null) {
 			this.inOrderNode(node.esq);
@@ -115,7 +114,6 @@ class ArvoreBinariaBusca {
 			this.inOrderNode(node.dir);
 		}
 	}
-
 	posOrder() {
 		this.posOrderNode(this.root);
 	}
