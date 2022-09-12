@@ -93,11 +93,9 @@ class ArvoreBinariaBusca {
 			}
 		}
 	}
-
 	preOrder() {
 		this.preOrderNode(this.root);
 	}
-
 	preOrderNode(node) {
 		if (node !== null) {
 			console.log(node.key);
