@@ -5,12 +5,10 @@ class Node {
 		this.esq = null;
 	}
 }
-
 class ArvoreBinariaBusca {
 	constructor() {
 		this.root = null;
 	}
-
 	insert(key) {
 		let newNode = new Node(key);
 		if (this.root === null) {
