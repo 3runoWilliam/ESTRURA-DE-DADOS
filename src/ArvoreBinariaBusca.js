@@ -36,14 +36,12 @@ class ArvoreBinariaBusca {
 	remove(key) {
 		this.root = this.removeNode(this.root, key);
 	}
-
 	findMinNode(node) {
 		while (node && node.esq !== null) {
 			node = node.esq;
 		}
 		return node;
 	}
-
 	removeNode(node, key) {
 		if (this.node === null) {
 			return null;
@@ -75,7 +73,6 @@ class ArvoreBinariaBusca {
 			return node;
 		}
 	}
-
 	height() {
 		if (this.root === null) return -1;
 		// altura da árvore vazia
@@ -83,7 +80,6 @@ class ArvoreBinariaBusca {
 			return this.heightNode(this.root);
 		}
 	}
-
 	heightNode(raiz) {
 		if (raiz === null) return -1;
 		// altura da árvore vazia
