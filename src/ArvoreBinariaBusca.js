@@ -126,9 +126,7 @@ class ArvoreBinariaBusca {
 		}
 	}
 }
-
 let arvore = new ArvoreBinariaBusca();
-
 console.log("Altura é " + arvore.height());
 
 arvore.insert(50);
